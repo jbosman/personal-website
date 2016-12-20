@@ -3,6 +3,7 @@
 .idea
 node_modules
 npm-debug.log
+public
 
 
 ### TEMPLATE ADDS ###
