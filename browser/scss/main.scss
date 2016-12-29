@@ -1,5 +1,10 @@
 body {
   background: #fdfdfd;
+  background-image: url("http://www.watereffect.net/uploads/final_1488927112.gif");
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  background-margin: 200px;
+  background-size: 100%;
 }
 
 @mixin clearfix {
