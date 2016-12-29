@@ -2,8 +2,6 @@
 
 let chalk = require('chalk');
 let server = require('http').createServer();
-let express = require('express');
-//let app = express();
 
 let createApp = () => {
 	let app = require('./app')();
@@ -14,7 +12,7 @@ let startServer = () => {
 	let PORT = process.env.port || 1337;
 
 	server.listen( PORT, () => { 
-		console.log(chalk.blue('Server up on ' + chalk.magenta(PORT) + chalk.blue("!") ));
+		console.log(chalk.blue('Server up on ' + chalk.magenta(PORT) + chalk.blue("!") )); // eslint-disable-line no-console
 	});
 };
 

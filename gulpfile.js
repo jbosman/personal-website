@@ -22,7 +22,6 @@ gulp.task('reloadCSS', function () {
 });
 
 gulp.task('lintJS', function () {
-
     return gulp.src(['./browser/js/**/*.js', './server/**/*.js'])
         .pipe(plumber({
             errorHandler: notify.onError('Linting FAILED! Check your gulp process.')
