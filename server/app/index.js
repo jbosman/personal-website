@@ -13,7 +13,7 @@ module.exports = () => {
 		let err;
 		
 		if ( path.extname(req.path).length > 0 ){
-			err = new Error('Not found.');
+			err = new Error('Not found.' + req.path);
 			err.status = 404;
 			next(err);
 		}
