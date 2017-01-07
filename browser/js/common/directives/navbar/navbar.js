@@ -4,9 +4,11 @@ app.directive('navbar', function(){
 		templateUrl: 'js/common/directives/navbar/navbar.html',
 		link: scope => {
 			scope.items = [
-				{ label: 'Home', state: 'home' },
-				//{ label: 'Porfolio', state: 'portfolio' },
-				{ label: 'About', state: 'about' }
+				{ label: 'Profile', state: 'profile' },
+				{ label: 'Background', state:'background' },
+				{ label: 'Projects', state: 'projects' },
+				{ label: 'Study', state: 'study'},
+				{ label: 'Contact', state: 'contact' }
 			]
 		}
 	};
