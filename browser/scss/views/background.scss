@@ -1,4 +1,4 @@
-.background {
+.backgnd {
   background-image: url("images/MillsLake-RockyMtnNational.jpg");
   background-repeat: no-repeat;
   background-position: center 106px;
@@ -6,31 +6,40 @@
   background-attachment: fixed;
 }
 
-.backgroundSection{
+.backgndSection{
 	margin-top: 40%;
 }
 
-#fullstackLogo {
-	display: block;
-	margin: auto;
-	width: 30%;
-}	
-
-#plexusLogo {
-	display: block;
-	margin: auto;
-	width: 40%;
+.backgnd-cmp {
+	margin-top: 10%;
+	img {
+		display: block;
+		margin: auto;
+	},
+	h1, h2, h3 {
+		line-height: 50%;
+	}
 }
 
-#cuLogo {
-	display: block;
-	margin: auto;
-	width: 20%;
+.backgnd-cmp {
+	table {
+		width: 60%;
+		margin: auto;
+		td {
+			line-height: 100%;
+		}
+		td.desc {
+			text-align: justify;
+		}
+	}
 }
 
-#wpiLogo {
-	display: block;
-	margin: auto;
-	width: 12%;
+div.backgnd{
+
+	section:last-child {
+		padding-bottom: 5%;
+	}
+
 }
+
 
