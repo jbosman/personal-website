@@ -1,12 +1,16 @@
-<nav class="navbar navbar-static-top">
+<nav class="navbar navbar-fixed-top">
     <div class="container">
-        <div class="navbar-header">
-            <site-logo></site-logo>
-        </div>
-        <ul class="nav navbar-nav">
-            <li ng-repeat="item in items">
+        <div class="navbar-header row justify-content-start align-items-center">
+            <div class='col'>
+                <site-logo></site-logo>
+            </div>
+            <div class='col nav navbar-nav' ng-repeat="item in items">
+                <a ui-sref-active='active' ui-sref='{{ item.state }}'>{{ item.label }}</a>
+            </div>
+        <!-- <ul class="nav navbar-nav">
+            <li class='col' ng-repeat="item in items">
                 <a ui-sref-active='active' ui-sref='{{ item.state }}'>{{ item.label }}</a>
             </li>
-        </ul>
+        </ul> -->
     </div>
 </nav>

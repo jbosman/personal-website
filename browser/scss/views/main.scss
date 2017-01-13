@@ -1,3 +1,5 @@
+$navbar-offset: 80px;
+
 section {
 	margin-top: 5%;
 }
@@ -11,11 +13,8 @@ h2 {
 	font-family: Arial;
 }
 
-.navbarOffset {
-	margin-top: 106px;
-}
-
 .viewText{
+	margin-top: 25%;
 	background-color: white;
 	width: 100%;
 	margin: auto;
@@ -24,4 +23,4 @@ h2 {
 }
 
 @import 'profile';
-@import 'background';
+@import 'background/main';

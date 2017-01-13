@@ -1,0 +1,60 @@
+$dropDownWidth: 70%;
+
+#bgImg1, #bgImg2, #bgImg3, #bgImg4 {
+	position: relative;
+	opacity: 0.75;
+	background-attachment: fixed;
+	background-position: center $navbar-offset;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#bgImg1 {
+ 	background-image: url("images/GOOG_PANO_MARISA.jpg");
+}
+
+#bgImg2 {
+	background-image: url("images/MillsLake-RockyMtnNational.jpg");
+}
+
+#bgImg3 {
+	background-image: url("images/Flatiron-Boulder.jpg");
+}
+
+#bgImg4 {
+	background-image: url("images/EarleBridge-WPI.jpg");
+}
+
+.bgHeading {
+	color: white;
+	font-size: 96px;
+	text-align: center;
+	// text-decoration: underline;
+}
+
+.bgUncover {
+	padding-top: 15%;
+	padding-bottom: 15%;
+	background-color: transparent;
+}
+
+.bgHideText{
+	opacity: 0.01;
+}
+
+.backgnd-cmp {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+	background-color: white;
+	img {
+		display: block;
+		margin: auto;
+	},
+	h1, h2, h3 {
+		line-height: 50%;
+	}
+}
+
+@import 'sections/cu';
+@import 'sections/wpi';

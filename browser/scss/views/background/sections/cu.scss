@@ -1,0 +1,12 @@
+#cuCourseWork {
+	table {
+		width: $dropDownWidth;
+		margin: auto;
+		td {
+			line-height: 100%;
+		}
+		td.description {
+			text-align: justify;
+		}
+	}
+}

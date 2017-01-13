@@ -1,18 +1,56 @@
 .profile {
-  background-image: url("images/profile/GOOG_PANO_MARISA.jpg");
+	background-position: relative;
+  background-image: url("images/GOOG_PANO_MARISA.jpg");
   background-repeat: no-repeat;
-  background-position: center 106px;
+  background-position: center $navbar-offset;
   background-size: 100%;
   background-attachment: fixed;
+}
+
+.profileHeading {
+	color: white;
+	font-size: 96px;
+	text-align: center;
+}
+
+.profileUncover {
+	padding-top: 7%;
+	background-color: transparent;
 }
 
 #profileShot {
 	display: block;
 	margin: auto;
-	margin-top: 20%;
 	width: 30%;
-	filter: grayscale(100%);
-	//clip-path: rect(30% 30% 30% 30%);
-	clip-path: circle( 45% at 48% 47%);
+	//filter: grayscale(100%);
+	clip-path: circle( 45% at 51% 47%);
 }
+
+#skills {
+	.row {
+		margin-top: 1%;
+	}
+
+	.rowHeader{
+		text-align: right;
+	}
+
+	i {
+	font-size: 72px;
+	margin: 4% 2% 2% 4%; 
+	}
+}
+
+#tortoiseSVNImg{
+	height: 72px;
+}
+
+@median on screen and (max-device-width: 480px){
+	.col-sm-1 {
+		margin-left: 2%;
+	}
+}
+
+
+
 

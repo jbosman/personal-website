@@ -1,5 +1,6 @@
 body {
   background: #fdfdfd;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @mixin clearfix {
@@ -10,5 +11,23 @@ body {
   }
 }
 
+abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+
+// .container, .col, .row{
+//   border: solid 3px black;
+// }
+
+// .col {
+//   border-color: green;
+// }
+
+// .row {
+//   border-color: red;
+// }
+
 @import 'directives/main'; 
-@import 'views/main'
+@import 'views/main';
