@@ -1,3 +1,7 @@
+#wpiLogo {
+	height: 150px;
+}
+
 #wpiDegree {
 	margin: auto;
 	width: $dropDownWidth;
@@ -14,37 +18,26 @@
 			margin-top: 3%;
 			font-style: italic;
 		}
-		table{
-			margin: auto;
-			font-size: 15px;
-			tr {
-				td:nth-child(2){
-					white-space: nowrap;					
-					text-align: left;
-					padding-left: 2%;
-				}
-			}
-		}
 	}
-
-	// section:first-child{
-	// 	margin-top: 1%;
-	// 	margin-bottom: 3%;
-	// }
 }
 
 #MQP {
 	h3, h4{
-		text-align: left;
+		text-align: justify;
 	}
 }
 
-// @media only screen and (min-width: 500px) {
-// 	#wpiDegree{
-// 		h2{
-// 			font-size: 25px;
-// 			line-height: 100%;
-// 			color: red;
-// 		}
-// 	}
-// }
+#ECECoursesHeading{
+	text-align: center;
+	margin-top: 3%;
+	font-style: italic;
+}
+
+.ECECourses {
+	.id {
+		text-align: justify;
+	},
+	.name {
+		text-align: left;
+	}
+}

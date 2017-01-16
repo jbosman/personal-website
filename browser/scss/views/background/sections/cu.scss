@@ -1,12 +1,34 @@
+#cuLogo {
+	height: 150px;
+}
+
 #cuCourseWork {
-	table {
-		width: $dropDownWidth;
-		margin: auto;
-		td {
-			line-height: 100%;
-		}
-		td.description {
-			text-align: justify;
-		}
+
+	.row {
+		margin-top: 3%;
+	}
+
+	.id {
+		text-align: right;
+	},
+
+	.name {
+		text-align: center;
+	},
+
+	.date {
+		text-align: left;
+	},
+
+	.description {
+		text-align: justify;
+	},
+
+	// Really weird quark is why this is hear
+	// For some reason .id and .name were affecting
+	// the alignment of the icons. Was even a problem
+	// when I changed the class names to cuId and cuName
+	i {
+		text-align: center;
 	}
 }

@@ -42,19 +42,5 @@ $dropDownWidth: 70%;
 	opacity: 0.01;
 }
 
-.backgnd-cmp {
-	padding-top: 3%;
-	padding-bottom: 3%;
-	text-align: center;
-	background-color: white;
-	img {
-		display: block;
-		margin: auto;
-	},
-	h1, h2, h3 {
-		line-height: 50%;
-	}
-}
-
-@import 'sections/cu';
-@import 'sections/wpi';
+@import 'bgSection/main';
+@import 'sections/main';

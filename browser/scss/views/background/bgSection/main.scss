@@ -1,0 +1,18 @@
+$bgSectionPadding: 3%;
+
+bg-Section {
+	text-align: center;
+	background-color: white;
+
+	section {
+		section{
+			margin-top: 1%;
+			p {
+
+			}
+		}
+	}
+}
+
+@import 'bgHeader';
+@import 'collapse'

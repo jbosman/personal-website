@@ -1,50 +1,8 @@
-<div class ='backgnd-cmp'>
-	<img src='js/background/images/cu-logo.jpg'>
-		<h3>Jan '12 - Dec '13</h3>
-		<h1>University of Colorado</h1>
-		<h3>Boulder, CO</h3>
-
-	<button class="btn btn-default" data-toggle="collapse" data-target="#cuCourseWork">
-		Course Work <span class="caret"></span>
-	</button>
-		<div id="cuCourseWork" class="collapse">
-			<table>
-				<tr>
-					<td><h3>CSCI2270</h3></td>
-					<td><h3>Data Structures</h3></td>
-					<td><h3>Jan - May '12</h3></td>
-				</tr>
-				<tr>
-					<td colspan='3' class='description'>
-						<h4>
-						Studied data abstractions (e.g., stacks, queues, lists, trees) and their representation techniques (e.g., linking, arrays). This course introduced concepts used in algorithm design and analysis including criteria for selecting data structures to fit their applications.
-						</h4>
-					</td>
-				</tr>	
-				<tr>
-					<td><h3>CSCI2400</h3></td>
-					<td><h3>Computer Systems</h3></td>
-					<td><h3>Jan - May'13</h3></td>
-				</tr>
-				<tr>
-					<td colspan='3' class='description'>
-						<h4>
-						Studied how programs are represented and executed by modern computers, including low-level machine representations of programs and data, and how computer components and the memory hierarchy influence performance. 
-						</h4>
-					</td>
-				</tr>
-				<tr>
-					<td><h3>CSCI2824</td>
-					<td><h3>Discrete Structures</td>
-					<td><h3>Aug - Dec '13</h3></td>
-				</tr>
-				<tr>
-					<td colspan='3' class='description'>
-						<h4>
-						 Topics include set theory, Boolean algebra, functions and relations, graphs, propositional and predicate calculus, proofs, mathematical induction, recurrence relations, combinatorics, discrete probability. Focuses on examples based on diverse applications of computer science.
-						</h4>
-					</td>
-				</tr>
-			</table>
+<bg-section sec-header='header' sec-collapse-ctrl='collapseCtrl'>
+	<div class='row justify-content-center' ng-repeat='course in courses'>
+			<div class='col-4 id'><h3>{{course.id}}</h3></div>
+			<div class='col-4 name'><h3>{{course.name}}</h3></div>
+			<div class='col-4 date'><h3>{{course.date}}</h3></div>
+			<div class='col-10 description'> <p>{{course.desc}}</p> </div>
 		</div>
-</div>
+</bg-section>
