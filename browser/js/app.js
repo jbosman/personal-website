@@ -5,6 +5,6 @@ let app = angular.module( 'personalSite', ['ui.router', 'ui.bootstrap', 'ngAnima
 app.config( ($urlRouterProvider, $locationProvider) =>  {
 
 	$locationProvider.html5Mode(true);
-	$urlRouterProvider.otherwise('/');    
+	$urlRouterProvider.otherwise('/profile');    
 
 });
