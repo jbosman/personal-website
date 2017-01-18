@@ -4,7 +4,8 @@
   "description": "Joe Bosman's personal website.",
   "main": "index.js",
   "engines": {
-    "node": "6.2.2"
+    "node": "6.2.2",
+    "npm": "3.10.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
