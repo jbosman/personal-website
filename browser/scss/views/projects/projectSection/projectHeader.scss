@@ -1,0 +1,20 @@
+project-header {
+	img {
+		//margin: auto;
+		align: middle;
+
+		&:hover {
+			color: darken(green, 10%);
+		}
+	}
+
+	h1 {
+		display: inline;
+	}
+
+	.devName {
+		align: middle;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+}

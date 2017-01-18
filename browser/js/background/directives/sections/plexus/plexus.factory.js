@@ -2,7 +2,7 @@ app.factory( 'plexusFactory', () => {
 
 	// Header information
 	let logoId =		"plexusLogo";
-	let logoSrc =  		"js/background/images/plexus-logo.jpg";
+	let logoSrc =  		"js/background/directives/sections/plexus/plexus-logo.jpg";
 	let institution =	"Plexus Corp";
 	let timeFrame = 	"June '08 - July '16";
 	let location = 		"Louisville, CO";

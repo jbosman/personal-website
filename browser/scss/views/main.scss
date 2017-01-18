@@ -1,16 +1,9 @@
-$navbar-offset: 80px;
-
 section {
 	margin-top: 3%;
 }
 
 h1 {
 	padding-top: 5px;
-	font-family: cursive;
-}
-
-h2 {
-	font-family: Arial;
 }
 
 p {
@@ -19,6 +12,17 @@ p {
 
 ul {
 	text-align: left;
+}
+
+$navbarOffset: 80px;
+
+.viewBackgroundTop {
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-position: center $navbarOffset;
+  background-size: cover;
+  background-attachment: fixed;
+  font-style: $site-font;
 }
 
 .viewText{
@@ -32,3 +36,4 @@ ul {
 
 @import 'profile';
 @import 'background/main';
+@import 'projects/main'

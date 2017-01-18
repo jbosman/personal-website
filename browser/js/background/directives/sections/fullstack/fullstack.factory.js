@@ -2,7 +2,7 @@ app.factory( 'fullstackFactory', () => {
 
 	// Header information
 	let logoId =		"fullstackLogo";
-	let logoSrc =  		"js/background/images/fullstack-logo.jpg";
+	let logoSrc =  		"js/background/directives/sections/fullstack/fullstack-logo.jpg";
 	let institution =	"Fullstack Academy";
 	let timeFrame = 	"July '16 - Oct '16";
 	let location = 		"New York, NY";

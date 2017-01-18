@@ -1,6 +1,8 @@
+$site-font: 'Roboto';
+
 body {
   background: #fdfdfd;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 @mixin clearfix {

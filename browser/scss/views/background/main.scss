@@ -1,35 +1,26 @@
 $dropDownWidth: 70%;
 
-#bgImg1, #bgImg2, #bgImg3, #bgImg4 {
-	position: relative;
-	opacity: 0.75;
-	background-attachment: fixed;
-	background-position: center $navbar-offset;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
 #bgImg1 {
- 	background-image: url("images/GOOG_PANO_MARISA.jpg");
+ 	background-image: url("images/GOOG_PANO_MARISA_25_o75.jpg");
 }
 
 #bgImg2 {
-	background-image: url("images/MillsLake-RockyMtnNational.jpg");
+	background-image: url("images/MillsLake-RockyMtnNational_25_o75.jpg");
 }
 
 #bgImg3 {
-	background-image: url("images/Flatiron-Boulder.jpg");
+	background-image: url("images/Flatiron-Boulder_25_o75.jpg");
 }
 
 #bgImg4 {
-	background-image: url("images/EarleBridge-WPI.jpg");
+	background-image: url("images/EarleBridge-WPI_25_o75.jpg");
 }
 
 .bgHeading {
 	color: white;
 	font-size: 96px;
 	text-align: center;
-	// text-decoration: underline;
+	font-family: $site-font;
 }
 
 .bgUncover {

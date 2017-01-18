@@ -2,7 +2,7 @@ app.factory( 'cuFactory', () => {
 
 	// Header information
 	let logoId =		"cuLogo";
-	let logoSrc =  		"js/background/images/cu-logo.jpg";
+	let logoSrc =  		"js/background/directives/sections/cu/cu-logo.jpg";
 	let institution =	"University of Colorado";
 	let timeFrame = 	"Jan '12 - Dec '13";
 	let location = 		"Boulder, CO";

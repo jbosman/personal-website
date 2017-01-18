@@ -1,16 +1,5 @@
-.profile {
-	background-position: relative;
-  background-image: url("images/GOOG_PANO_MARISA.jpg");
-  background-repeat: no-repeat;
-  background-position: center $navbar-offset;
-  background-size: 100%;
-  background-attachment: fixed;
-}
-
-.profileHeading {
-	color: white;
-	font-size: 96px;
-	text-align: center;
+.profileBackground {
+	background-image: url("images/GOOG_PANO_MARISA_25.jpg");
 }
 
 .profileUncover {
@@ -18,12 +7,34 @@
 	background-color: transparent;
 }
 
+.profileMain {
+	font-style: $site-font;
+}
+
+#profileMain:last-child {
+	margin-bottom: 5%;
+}
+
+#profileH1, #profileH2  {
+	color: white;
+	text-align: center;
+	padding-top: -3%;
+}
+
+#profileH1 {
+	font-size: 96px;
+}
+
+#profileH2 {
+	font-size: 72px;
+}
+
 #profileShot {
 	display: block;
 	margin: auto;
-	width: 30%;
+	width: 20%;
 	//filter: grayscale(100%);
-	clip-path: circle( 45% at 51% 47%);
+	clip-path: circle( 44% at 51% 47%);
 }
 
 #skills {

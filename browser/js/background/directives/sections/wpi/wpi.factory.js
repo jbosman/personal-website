@@ -2,7 +2,7 @@ app.factory( 'wpiFactory', () => {
 
 	// Header information
 	let logoId =		"wpiLogo";
-	let logoSrc =  		"js/background/images/wpi-logo.png";
+	let logoSrc =  		"js/background/directives/sections/wpi/wpi-logo.png";
 	let institution =	"Worcester Polytechnic Institute";
 	let timeFrame = 	"Sept '04 - June '08";
 	let location = 		"Worcester, MA";

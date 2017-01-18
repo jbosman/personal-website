@@ -1,0 +1,17 @@
+<div>
+	<a target="_blank" href='{{headerInfo.getProjectLink()}}'>
+		<img id='{{ headerInfo.getLogoId() }}' src='{{ headerInfo.getLogoSrc() }}'>
+	</a>
+	<div>
+		<a arget="_blank" href='{{headerInfo.getProjectLink()}}'>
+			<h1>{{ headerInfo.getProjectName() }}</h1>
+		</a>
+	</div>
+</div>
+<h3>{{ headerInfo.getProjectTimeFrame() }}</h3>
+<h3>Developer(s):</h3>
+<div class='row'>
+	<div class='col-12 justify-content-center'>
+		<span class='devName' ng-repeat='developer in developers'> {{ developer.name }} </span>
+	</div>
+</div>
