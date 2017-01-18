@@ -9,7 +9,7 @@ let createApp = () => {
 };
 
 let startServer = () => {
-	let PORT = process.env.port || 1337;
+	let PORT = process.env.PORT || 1337;
 
 	server.listen( PORT, () => { 
 		console.log(chalk.blue('Server up on ' + chalk.magenta(PORT) + chalk.blue("!") )); // eslint-disable-line no-console
