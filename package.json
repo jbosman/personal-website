@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --watch server -e js,html server/start.js",
-    "postinstall": "node seed.js && gulp build"
+    "postinstall": "node gulp build"
   },
   "keywords": [],
   "author": "Joe Bosman",
