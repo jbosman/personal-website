@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Joe Bosman's personal website.",
   "main": "index.js",
+  "engines": {
+    "node": "6.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --watch server -e js,html server/start.js"
+    "start": "nodemon --watch server -e js,html server/start.js",
+    "postinstall": "node seed.js && gulp build"
   },
   "keywords": [],
   "author": "Joe Bosman",
