@@ -34,9 +34,24 @@ navbar {
   }
 }
 
-#movileNav {
-  button {
-    background-color: white;
+// Removes bootstrap caret on dropdown menu
+.dropdown-toggle::after{
+  display: none;
+}
+
+.fa-bars {
+  color: white;
+}
+
+#mobileNav {
+  h1, .h1 {
+    font-size: 4.5rem;
+  }
+
+  a { 
+    &.active {
+      color: darken(#f31214, 10%);
+    }
   }
 }
 

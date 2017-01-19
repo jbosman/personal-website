@@ -2,6 +2,7 @@ contact-section {
 	text-align: center;
 
 	h2 {
+		text-align: center;
 		color: #dd4b39;
 	}
 }
@@ -16,6 +17,5 @@ $contactIconMarginTop: 40px;
 .mailIcon {
 	color: #dd4b39;
 	margin-top: $contactIconMarginTop;
-
 	cursor: context-menu;
 }

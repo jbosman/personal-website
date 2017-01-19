@@ -3,7 +3,7 @@
 }
 
 .profileUncover {
-	padding-top: 7%;
+	// padding-top: 7%;
 	background-color: transparent;
 }
 
@@ -18,11 +18,18 @@
 #profileH1, #profileH2  {
 	color: white;
 	text-align: center;
-	padding-top: -3%;
+	//padding-top: -3%;
 }
 
 #profileH1 {
 	font-size: 96px;
+	margin-top: $navbarOffsetDesktop;
+}
+
+@media only screen and (max-width: 1200px) {
+	#profileH1 {
+		margin-top: $navbarOffsetMobile;
+	}
 }
 
 #profileH2 {
@@ -33,7 +40,7 @@
 	display: block;
 	margin: auto;
 	width: 20%;
-	clip-path: circle( 44% at 51% 47%);
+	clip-path: circle( 43% at 50% 47%);
 }
 
 #skills {
