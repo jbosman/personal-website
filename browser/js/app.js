@@ -1,6 +1,6 @@
 'use strict'
 
-let app = angular.module( 'personalSite', ['ui.router', 'ui.bootstrap', 'ngAnimate']); // eslint-disable-line no-undef
+let app = angular.module( 'personalSite', ['ui.router', 'ui.bootstrap']); // eslint-disable-line no-undef
 
 app.config( ($urlRouterProvider, $locationProvider) =>  {
 
