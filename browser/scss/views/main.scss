@@ -14,15 +14,22 @@ ul {
 	text-align: left;
 }
 
-$navbarOffset: 80px;
+$navbarOffsetDesktop: 80px;
+$navbarOffsetMobile: 140px;
 
 .viewBackgroundTop {
   background-position: relative;
   background-repeat: no-repeat;
-  background-position: center $navbarOffset;
+  background-position: center $navbarOffsetDesktop;
   background-size: cover;
   background-attachment: fixed;
   font-style: $site-font;
+}
+
+@media only screen and (max-width: 1200px) {
+	.viewBackgroundTop{
+		background-position: center $navbarOffsetMobile;
+	}
 }
 
 .viewText{
@@ -36,4 +43,5 @@ $navbarOffset: 80px;
 
 @import 'profile';
 @import 'background/main';
-@import 'projects/main'
+@import 'projects/main';
+@import 'study';

@@ -1,11 +1,23 @@
 <nav class="navbar navbar-fixed-top hidden-md">
     <div class="container">
         <div class="navbar-header row justify-content-start align-items-center">
-            <div class='col'>
+            <div id='desktopNav' class='col'>
                 <site-logo></site-logo>
             </div>
-            <div class='col nav navbar-nav' ng-repeat="item in items">
+            <div id='desktopNav' class=' col nav navbar-nav' ng-repeat="item in items">
                 <a ui-sref-active='active' ui-sref='{{ item.state }}'>{{ item.label }}</a>
             </div>
+
+            <div id='mobileNav' class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <i id='dropDownBars' class="fa fa-bars fa-6x" aria-hidden="true"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                <li ng-repeat="item in items">
+                	<a ui-sref-active='active' ui-sref='{{ item.state }}'>{{ item.label }}</a>
+                </li>
+              </ul>
+            </div>
+        </div>
     </div>
 </nav>

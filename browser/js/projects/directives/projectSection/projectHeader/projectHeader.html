@@ -9,7 +9,8 @@
 	</div>
 </div>
 <h3>{{ headerInfo.getProjectTimeFrame() }}</h3>
-<h3>Developer(s):</h3>
+<h3 ng-show='developers.length > 1'>Developers:</h3>
+<h3 ng-show='developers.length === 1'>Developer:</h3>
 <div class='row'>
 	<div class='col-12 justify-content-center'>
 		<span class='devName' ng-repeat='developer in developers'> {{ developer.name }} </span>
