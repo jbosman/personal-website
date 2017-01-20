@@ -2,6 +2,17 @@
 
 let chalk = require('chalk');
 let server = require('http').createServer();
+let RequestPromise = require('request-promise');
+
+function selfCrawl(){
+
+	RequestPromise('http://www.bosman.io')
+	.then( () => {
+		console.log('selfcrawl succeeded...');
+	})
+	.catch(console.error);
+
+}
 
 let createApp = () => {
 	let app = require('./app')();
@@ -18,3 +29,5 @@ let startServer = () => {
 
 createApp();
 startServer();
+setInterval( selfCrawl, 1500000); // Keep heroku site up
+
