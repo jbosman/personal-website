@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "Joe Bosman's personal website.",
-  "main": "index.js",
+  "main": "server/start.js",
   "engines": {
     "node": "6.2.2",
     "npm": "3.10.6"
