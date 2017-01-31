@@ -1,51 +1,55 @@
-.profileBackground {
-	background-image: url("images/GOOG_PANO_MARISA_25.jpg");
+/* ------------------------------------- */
+/* HEADER */
+/* ------------------------------------- */
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("resources/images/GOOG_PANO_MARISA_25.jpg"); 
+	background-size: cover;
+	background-position: relative center;
+	height: 100vh;
+	width: 100vw;
+	background-attachment: fixed;
 }
 
-.profileUncover {
-	// padding-top: 7%;
-	background-color: transparent;
+.headerName {
+	text-transform: none;
 }
 
-.profileMain {
-	font-style: $site-font;
+.hero-text-box {
+	padding-top: 50px;
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
 }
 
-#profileMain:last-child {
-	margin-bottom: 5%;
-}
-
-#profileH1, #profileH2  {
-	color: white;
-	text-align: center;
-	//padding-top: -3%;
-}
-
-#profileH1 {
-	font-size: 96px;
-	margin-top: $navbarOffsetDesktop;
-}
-
-@media only screen and (max-width: 1200px) {
-	#profileH1 {
-		margin-top: $navbarOffsetMobile;
+.hero-text-box {
+	img {
+		display: block;
+		margin: auto;
+		width: 20%;
+		border-radius: 250px;
 	}
 }
 
-#profileH2 {
-	font-size: 72px;
+@media only screen and (max-width: 1200px) {
+	.hero-text-box {
+		img {
+			width: 100%;
+		}
+	}
 }
 
-#profileShot {
-	display: block;
-	margin: auto;
-	width: 20%;
-	clip-path: circle( 43% at 50% 47%);
-}
+/* ------------------------------------- */
+/* SKILLS SECTION */
+/* ------------------------------------- */
 
 #skills {
+	margin-top: 100px;	
+
 	.row {
-		margin-top: 1%;
+		margin-top: 20px;
 	}
 
 	.rowHeader{
@@ -55,6 +59,17 @@
 	i {
 	font-size: 95px;
 	margin: 4% 2% 2% 4%; 
+	}
+}
+
+section {
+	margin-bottom: 100px;
+	h1 {
+		color: $baseColor;
+		text-align: center;
+	}
+	hr{
+		border-top: 3px solid $baseColor;
 	}
 }
 
