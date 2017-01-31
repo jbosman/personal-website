@@ -1,26 +1,51 @@
 $dropDownWidth: 70%;
 
 #bgImg1 {
- 	background-image: url("images/GOOG_PANO_MARISA_25_o75.jpg");
+ 	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("resources/images/GOOG_PANO_MARISA_25.jpg");
 }
 
 #bgImg2 {
-	background-image: url("images/MillsLake-RockyMtnNational_25_o75.jpg");
+	background-image: url("resources/images/MillsLake-RockyMtnNational_25_o75.jpg");
 }
 
 #bgImg3 {
-	background-image: url("images/Flatiron-Boulder_25_o75.jpg");
+	background-image: url("resources/images/Flatiron-Boulder_25_o75.jpg");
 }
 
 #bgImg4 {
-	background-image: url("images/EarleBridge-WPI_25_o75.jpg");
+	background-image: url("resources/images/EarleBridge-WPI_25_o75.jpg");
 }
 
-.bgMainHeading {
-	color: white;
-	font-size: 96px;
-	text-align: center;
-	font-family: $site-font;
+#bgImg1, #bgImg2, #bgImg3, #bgImg4 {
+	width: 100vw;
+	height: 50vh;
+}
+
+#bgImg1 {
+	height: 75vh;
+}
+
+@media only screen and (max-width: 1200px){
+	#bgImg2, #bgImg3, #bgImg4 {
+		height: auto;
+	}
+	#bgImg1{
+		height: 50vh;
+	}
+}
+
+.backgroundSec {
+	padding-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+@media only screen and (max-width: 1200px){
+	.backgroundSec {
+		transform: translate(-50%, -200%);
+	}
 }
 
 .bgUncover {

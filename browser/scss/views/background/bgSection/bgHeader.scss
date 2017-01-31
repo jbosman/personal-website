@@ -4,16 +4,16 @@ bg-Header {
 		padding-top: 3%;
 		display: block;
 		margin: auto;
+		margin-bottom: 20px;
 	}
 
 	h1 {
+		color: $baseColor;
 		line-height: 50%;
 	}
 
 	h3 {
 		line-height: 80%;
 	}
-
-	
 
 }

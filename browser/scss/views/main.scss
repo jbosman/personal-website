@@ -40,52 +40,30 @@ h3 {
     font-size: 110%;
 }
 
+p {
+    text-align: justify;
+}
 
-// section {
-// 	margin-top: 3%;
-// }
+.heroBackground {
+	background-size: cover;
+	background-position: relative center;
+	height: 100vh;
+	width: 100vw;
+	background-attachment: fixed;
+}
 
-// h1 {
-// 	padding-top: 5px;
-// }
-
-// p {
-// 	text-align: justify;
-// }
-
-// ul {
-// 	text-align: left;
-// }
-
-// $navbarOffsetDesktop: 80px;
-// $navbarOffsetMobile: 140px;
-
-// .viewBackgroundTop {
-//   background-position: relative;
-//   background-repeat: no-repeat;
-//   background-position: center $navbarOffsetDesktop;
-//   background-size: cover;
-//   background-attachment: fixed;
-//   font-style: $site-font;
-// }
-
-// @media only screen and (max-width: 1200px) {
-// 	.viewBackgroundTop{
-// 		background-position: center $navbarOffsetMobile;
-// 	}
-// }
-
-// .viewText{
-// 	margin-top: 25%;
-// 	background-color: white;
-// 	width: 100%;
-// 	margin: auto;
-// 	color: black;
-// 	text-align: center;
-// }
+.hero-text-box {
+    // margin-top: $navbarDesktopHeight;
+	padding-top: 50px;
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
 
 @import 'profile';
-// @import 'background/main';
-// @import 'projects/main';
-// @import 'study';
-// @import 'contact';
+@import 'background/main';
+@import 'projects/main';
+@import 'study';
+@import 'contact';

@@ -1,10 +1,10 @@
 #nbaPickemLogo {
-	margin-top: $navbarOffsetDesktop + ( $navbarOffsetDesktop / 2 );
+	// margin-top: $navbarOffsetDesktop + ( $navbarOffsetDesktop / 2 );
 	width: 15%;
 }
 
 @media only screen and (max-width: 1200px) {
 	#nbaPickemLogo {
-		margin-top: $navbarOffsetMobile + ( $navbarOffsetMobile / 2 );
+		// margin-top: $navbarOffsetMobile + ( $navbarOffsetMobile / 2 );
 	}
 }

@@ -1,7 +1,9 @@
 #studySection {
 
 	img {
-		margin-top: $navbarOffsetDesktop + ( $navbarOffsetDesktop / 2 );
+		display: block;
+		margin: auto;
+		width: 30%;
 	}
 	
 }

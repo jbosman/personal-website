@@ -5,8 +5,8 @@ $contactIconMarginTop: 40px;
 contact-section {
 	text-align: center;
 
-	h2 {
-		text-align: center;
+	h1 {
+		color: $baseColor;
 	}
 
 	#email {
@@ -21,10 +21,6 @@ contact-section {
 		}
 	}
 
-}
-
-#contactFirstSection {
-	margin-top: $navbarOffsetMobile + $contactIconMarginTop;
 }
 
 .fa-linkedin-square {
