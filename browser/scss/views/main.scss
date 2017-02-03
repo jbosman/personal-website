@@ -40,8 +40,18 @@ h3 {
     font-size: 110%;
 }
 
+h4 {
+   font-size: 50%; 
+}
+
 p {
     text-align: justify;
+}
+
+@media only screen and (max-width: 1200px){
+    p {
+        font-size: 200%;
+    }
 }
 
 .heroBackground {
@@ -53,7 +63,6 @@ p {
 }
 
 .hero-text-box {
-    // margin-top: $navbarDesktopHeight;
 	padding-top: 50px;
     position: absolute;
     width: 1140px;
