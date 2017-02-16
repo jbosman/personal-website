@@ -1,31 +1,17 @@
 app.factory( 'cuFactory', () => {
 
-	// Header information
-	let logoId =		"cuLogo";
-	let logoSrc =  		"js/background/directives/sections/cu/cu-logo.jpg";
-	let institution =	"University of Colorado";
-	let timeFrame = 	"Jan '12 - Dec '13";
-	let location = 		"Boulder, CO";
+	let headerDetails = {
+		logoId:			"cuLogo",
+		logoSrc : 		"js/background/directives/sections/cu/cu-logo.jpg",
+		institution:	"University of Colorado",
+		timeFrame: 		"Jan '12 - Dec '13",
+		location: 		"Boulder, CO",
+	};
 
-	let header = {
-		getLogoId: 		() => logoId, 
-		getLogoSrc: 	() => logoSrc,  		
-		getInstitution: () => institution, 	
-		getTimeFrame: 	() => timeFrame, 		
-		getLocation: 	() => location		
-	}
-
-	let title = 'Courses';
-	let showCollapse = true;
-	let target = 'cuCourseWork';
-
-	let collapseCtrl = {
-		getTitle: () => title,
-		showCollapse: () => showCollapse,
-		toggleCollapse: () => { showCollapse= !showCollapse; },
-		getDataTarget: () => '#' + target,
-		getTargetID: () => target
-	}
+	let collapseCtrlDetails = {
+		title: 			'Courses',
+		target: 		'cuCourseWork',
+	};
 
 	let courses = [
 				{ id: 'CSCI2270', 
@@ -43,9 +29,9 @@ app.factory( 'cuFactory', () => {
 			];
 
 	return {
-		header: header,
-		collapseCtrl: collapseCtrl,
-		getCourses: () => courses,
+		headerDetails: 			headerDetails,
+		collapseCtrlDetails: 	collapseCtrlDetails,
+		getCourses: 			() => courses,
 	}
 
 });

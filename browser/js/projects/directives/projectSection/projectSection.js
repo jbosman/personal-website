@@ -5,8 +5,8 @@ app.directive( 'projectSection', () => {
 		templateUrl: 'js/projects/directives/projectSection/projectSection.html',
 		transclude: true,
 		scope: {
-			secHeader: '=',
-			secCollapseCtrl: '='
+			headerDetails: '=',
+			collapseCtrlDetails: '='
 		}
-	}
+	}	
 });

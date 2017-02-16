@@ -1,5 +1,5 @@
 <div class='row align-items-center justify-content-center'>
-	<div ng-show='showCollapse()' ng-click='toggleCollapse()' class='col-12'>
+	<div ng-show='!collapseCtrl.showCollapse()' ng-click='collapseCtrl.toggleCollapse()' class='col-12'>
 		<button data-toggle="collapse" data-target="{{ collapseCtrl.getDataTarget() }}"> 
 			<hr>
 			<i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>

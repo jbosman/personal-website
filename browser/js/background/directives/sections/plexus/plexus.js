@@ -4,8 +4,8 @@ app.directive( 'sectionPlexus', () => {
 		templateUrl: 'js/background/directives/sections/plexus/plexus.html',
 		scope: {},
 		controller: ($scope, plexusFactory) => {
-			$scope.header = plexusFactory.header;
-			$scope.collapseCtrl = plexusFactory.collapseCtrl;
+			$scope.header = plexusFactory.headerDetails;
+			$scope.collapseCtrl = plexusFactory.collapseCtrlDetails;
 		}
 	};
 });

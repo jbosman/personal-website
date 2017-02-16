@@ -1,31 +1,19 @@
 app.factory( 'wpiFactory', () => {
 
-	// Header information
-	let logoId =		"wpiLogo";
-	let logoSrc =  		"js/background/directives/sections/wpi/wpi-logo.png";
-	let institution =	"Worcester Polytechnic Institute";
-	let timeFrame = 	"Sept '04 - June '08";
-	let location = 		"Worcester, MA";
+	let headerDetails = {
+		logoId:			"wpiLogo",
+		logoSrc : 		"js/background/directives/sections/wpi/wpi-logo.png",
+		institution:	"Worcester Polytechnic Institute",
+		timeFrame: 		"Sept '04 - June '08",
+		location: 		"Worcester, MA",
+	};
 
-	let header = {
-		getLogoId: 		() => logoId,
-		getLogoSrc: 	() => logoSrc,  		
-		getInstitution: () => institution, 	
-		getTimeFrame: 	() => timeFrame, 		
-		getLocation: 	() => location		
-	}
+	let collapseCtrlDetails = {
+		title: 			'Degree',
+		target: 		'wpiDegree',
+		isCollapsed: true
+	};
 
-	let title = 'Degree';
-	let showCollapse = true;
-	let target = 'wpiDegree';
-
-	let collapseCtrl = {
-		getTitle: () => title,
-		showCollapse: () => showCollapse,
-		toggleCollapse: () => { showCollapse= !showCollapse; },
-		getDataTarget: () => '#' + target,
-		getTargetID: () => target
-	}
 
 	let courses = [
 				{ id: 'ECE4902', name: 'Analog Integrated Circuit Design'},
@@ -41,9 +29,9 @@ app.factory( 'wpiFactory', () => {
 			];
 
 	return {
-		header: header,
-		collapseCtrl: collapseCtrl,
-		getCourses: () => courses,
+		headerDetails: 			headerDetails,
+		collapseCtrlDetails: 	collapseCtrlDetails,
+		getCourses: 			() => courses,
 	}
 
 });

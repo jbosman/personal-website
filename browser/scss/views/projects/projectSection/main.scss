@@ -1,6 +1,10 @@
 project-section {
 	text-align: center;
 	background-color: white;
+
+	.gitHubLink {
+		margin-bottom: 20px; 
+	}
 }
 
 @import 'projectHeader';

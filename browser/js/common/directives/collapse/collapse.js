@@ -4,14 +4,14 @@ app.directive( 'collapse', () => {
 		templateUrl: 'js/common/directives/collapse/collapse.html',
 		transclude: true,
 		scope: {
-			collapseCtrl: '='
+			collapseCtrlDetails: '='
 		},
-		link: scope => {
-			scope.toggleCollapse = () => { 
-				console.log('toggled');
-				scope.collapseCtrl.toggleCollapse(); }
-			scope.collapseIcon = () => {
-				return scope.collapseCtrl.showCollapse() ? 
+		controller: function($scope, collapseFactory) {
+
+			$scope.collapseCtrl = collapseFactory.getCollapseObj( $scope.collapseCtrlDetails.title,  $scope.collapseCtrlDetails.target );
+			// Attach function for controlling selected collapse up and down icons
+			$scope.collapseIcon = function() {
+				return $scope.collapseCtrl.showCollapse() ? 
 						'fa-chevron-circle-down' :
 						'fa-chevron-circle-up';
 			}

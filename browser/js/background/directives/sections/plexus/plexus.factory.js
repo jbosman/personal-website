@@ -1,35 +1,22 @@
 app.factory( 'plexusFactory', () => {
 
-	// Header information
-	let logoId =		"plexusLogo";
-	let logoSrc =  		"js/background/directives/sections/plexus/plexus-logo.jpg";
-	let institution =	"Plexus Corp";
-	let timeFrame = 	"June '08 - July '16";
-	let location = 		"Louisville, CO";
+	let headerDetails = {
+		logoId:			"plexusLogo",
+		logoSrc : 		"js/background/directives/sections/plexus/plexus-logo.jpg",
+		institution:	"Plexus Corp",
+		timeFrame: 		"June '08 - July '16",
+		location: 		"Louisville, CO",
+	};
 
-	let header = {
-		getLogoId: 		() => logoId,
-		getLogoSrc: 	() => logoSrc,  		
-		getInstitution: () => institution, 	
-		getTimeFrame: 	() => timeFrame, 		
-		getLocation: 	() => location		
-	}
-
-	let title = 'Experience';
-	let showCollapse = true;
-	let target = 'plexusExperience';
-
-	let collapseCtrl = {
-		getTitle: () => title,
-		showCollapse: () => showCollapse,
-		toggleCollapse: () => { showCollapse= !showCollapse; },
-		getDataTarget: () => '#' + target,
-		getTargetID: () => target
-	}
+	let collapseCtrlDetails = {
+		title: 		'Experience',
+		target: 	'plexusExperience',
+		isCollapsed: true
+	};
 
 	return {
-		header: header,
-		collapseCtrl: collapseCtrl
+		headerDetails: headerDetails,
+		collapseCtrlDetails: collapseCtrlDetails
 	}
 
 });

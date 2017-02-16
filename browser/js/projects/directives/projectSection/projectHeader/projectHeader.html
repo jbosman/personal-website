@@ -1,14 +1,14 @@
 <div>
-	<a target="_blank" href='{{headerInfo.getProjectLink()}}'>
+	<a target="_blank" href='{{ headerInfo.getProjectLink() }}'>
 		<img id='{{ headerInfo.getLogoId() }}' src='{{ headerInfo.getLogoSrc() }}'>
 	</a>
-	<div>
-		<a arget="_blank" href='{{headerInfo.getProjectLink()}}'>
+	<div class='projectName'>
+		<a arget="_blank" href='{{ headerInfo.getProjectLink() }}'>
 			<h1>{{ headerInfo.getProjectName() }}</h1>
 		</a>
 	</div>
 </div>
-<h3>{{ headerInfo.getProjectTimeFrame() }}</h3>
+<h3>{{ headerInfo.getTimeFrame() }}</h3>
 <h3 ng-show='developers.length > 1'>Developers:</h3>
 <h3 ng-show='developers.length === 1'>Developer:</h3>
 <div class='row'>

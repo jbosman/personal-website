@@ -7,6 +7,10 @@ bg-Section {
 			margin-top: 1%;
 		}
 	}
+
+	.heading {
+		color: $baseColor;
+	}
 }
 
 @import 'bgHeader';

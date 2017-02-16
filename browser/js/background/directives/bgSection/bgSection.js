@@ -5,8 +5,8 @@ app.directive( 'bgSection', () => {
 		templateUrl: 'js/background/directives/bgSection/bgSection.html',
 		transclude: true,
 		scope: {
-			secHeader: '=',
-			secCollapseCtrl: '='
+			headerDetails: '=',
+			collapseCtrlDetails: '='
 		}
 	}
 });

@@ -1,39 +1,28 @@
 app.factory( 'nbaPickemFactory', () => {
 
 	// Header information
-	let logoId =			"nbaPickemLogo";
-	let logoSrc =  			"js/projects/directives/sections/nbaPickem/jumpman-logo-white-bg-rounded.png";
-	let projectName =		"NBA Pickem";
-	let projectLink =		"http://nba-pickem.herokuapp.com";
-	let projectGitLink = 	"https://github.com/jbosman/NBA_Pickem" 
-	let timeFrame = 		"Oct '16 - Present";
-	let developers = 		[{ name: "Joe Bosman" }];
-
-	let header = {
-		getLogoId: 				() => logoId, 
-		getLogoSrc: 			() => logoSrc,  		
-		getProjectName: 		() => projectName,
-		getProjectLink: 		() => projectLink,
-		getProjectGitLink: 		() => projectGitLink,
-		getTimeFrame: 			() => timeFrame, 		
-		getProjectDevelopers: 	() => developers		
+	let headerDetails = {
+		logoId:				"nbaPickemLogo",
+		logoSrc:  			"js/projects/directives/sections/nbaPickem/jumpman-logo-white-bg-rounded.png",
+		projectName:		"NBA Pickem",
+		projectGitLink: 	"https://github.com/jbosman/NBA_Pickem", 
+		timeFrame: 			"Oct '16 - Present",
+		developers: 		[{ name: "Joe Bosman" }],		
 	}
 
-	let title = 'App Info';
-	let showCollapse = true;
-	let target = 'nbaPickemInfo';
+	let collapseCtrlDetails = {
+		title: 	'App Info',
+		target: 'nbaPickemInfo',
+	}
 
-	let collapseCtrl = {
-		getTitle: () => title,
-		showCollapse: () => showCollapse,
-		toggleCollapse: () => { showCollapse= !showCollapse; },
-		getDataTarget: () => '#' + target,
-		getTargetID: () => target
+	let sectionDetails = {
+		gitHubLink: "http://nba-pickem.herokuapp.com",
 	}
 
 	return {
-		header: header,
-		collapseCtrl: collapseCtrl
+		headerDetails: 			headerDetails,
+		collapseCtrlDetails: 	collapseCtrlDetails,
+		sectionDetails: 		sectionDetails
 	}
 
 });
