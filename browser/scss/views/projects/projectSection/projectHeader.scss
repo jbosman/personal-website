@@ -1,11 +1,15 @@
 project-header {
+
 	img {
-		//margin: auto;
 		align: middle;
 
 		&:hover {
 			color: darken(green, 10%);
 		}
+	}
+
+	.projectImg {
+		margin-bottom: 15px;
 	}
 
 	h1 {

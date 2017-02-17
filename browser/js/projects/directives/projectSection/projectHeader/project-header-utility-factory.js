@@ -6,7 +6,6 @@ app.factory('projectHeaderFactory', function( sectionFactoryUtilities ){
 		getLogoSrc: 			function(){  return this.logoSrc; }, 		
 		getProjectName: 		function(){  return this.projectName; },
 		getProjectLink: 		function(){  return this.projectLink; },
-		getProjectGitLink: 		function(){  return this.projectGitLink; },
 		getTimeFrame: 			function(){  return this.timeFrame; },		
 		getProjectDevelopers: 	function(){  return this.developers; }
 	}

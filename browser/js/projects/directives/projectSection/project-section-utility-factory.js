@@ -1,7 +1,7 @@
 app.factory('projectSectionUtilityFactory', function( sectionFactoryUtilities){
 
 	let projectSectionFactoryUtilities = {
-		getGitHubLink: function(){ this.gitHubLink; }
+		getGitHubLink: function(){ return this.gitHubLink; }
 	}
 
 	function getSectionObj( sectionDetails ){

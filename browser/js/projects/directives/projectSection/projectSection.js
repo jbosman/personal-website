@@ -6,7 +6,8 @@ app.directive( 'projectSection', () => {
 		transclude: true,
 		scope: {
 			headerDetails: '=',
-			collapseCtrlDetails: '='
+			collapseCtrlDetails: '=',
+			sectionDetails: '='
 		}
 	}	
 });

@@ -1,5 +1,14 @@
 <project-header header-details='headerDetails'></project-header>
 
 <collapse collapse-ctrl-details='collapseCtrlDetails'>
+
+	<div class='row justify-content-center gitHubLink'>
+		<div class='col'>
+			<a target='_blank' href="{{ sectionDetails.getGitHubLink() }}" >
+			<i class="fa fa-github fa-4x" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+	
 	<span ng-transclude></span>
 </collapse>

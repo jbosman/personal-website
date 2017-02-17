@@ -2,12 +2,12 @@ app.factory( 'nbaPickemFactory', () => {
 
 	// Header information
 	let headerDetails = {
-		logoId:				"nbaPickemLogo",
-		logoSrc:  			"js/projects/directives/sections/nbaPickem/jumpman-logo-white-bg-rounded.png",
-		projectName:		"NBA Pickem",
-		projectGitLink: 	"https://github.com/jbosman/NBA_Pickem", 
-		timeFrame: 			"Oct '16 - Present",
-		developers: 		[{ name: "Joe Bosman" }],		
+		logoId:			"nbaPickemLogo",
+		logoSrc:  		"js/projects/directives/sections/nbaPickem/jumpman-logo-white-bg-rounded.png",
+		projectName:	"NBA Pickem", 
+		projectLink: 	"http://nba-pickem.herokuapp.com", 
+		timeFrame: 		"Oct '16 - Present",
+		developers: 	[{ name: "Joe Bosman" }],		
 	}
 
 	let collapseCtrlDetails = {
@@ -16,7 +16,7 @@ app.factory( 'nbaPickemFactory', () => {
 	}
 
 	let sectionDetails = {
-		gitHubLink: "http://nba-pickem.herokuapp.com",
+		gitHubLink: "https://github.com/jbosman/NBA_Pickem",
 	}
 
 	return {
