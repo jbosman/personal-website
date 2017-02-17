@@ -10,7 +10,7 @@ app.factory( 'sheldonFactory', () => {
 	}
 
 	let collapseCtrlDetails = {
-		title: 			'Piano Site',
+		title: 			'Freelance Work',
 		target: 		'SL_info',
 	};
 
