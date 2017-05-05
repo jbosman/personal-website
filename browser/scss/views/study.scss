@@ -1,7 +1,7 @@
 #studySection {
 
 	h1 {
-		margin-top: 20px;
+		margin-top: 40px;
 		color: $baseColor;
 		text-align: center;
 	}
@@ -16,12 +16,20 @@
 	}
 
 	h2 {
+		width: 75%;
 		margin: 10px auto;
+	}
+
+	h3 {
+		margin-top: 5px;
+		text-align: center;
 	}
 
 	img {
 		display: block;
 		margin: 0 auto;
+		width: 300px;
+		height: auto;
 	}
 
 	p {
@@ -29,5 +37,7 @@
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
+
+	margin-bottom: 100px;
 	
 }
