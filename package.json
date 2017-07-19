@@ -4,7 +4,7 @@
   "description": "Joe Bosman's personal website.",
   "main": "server/start.js",
   "engines": {
-    "node": "6.2.2",
+    "node": ">=4.0.0",
     "npm": "3.10.6"
   },
   "scripts": {
